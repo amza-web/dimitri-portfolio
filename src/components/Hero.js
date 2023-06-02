@@ -20,7 +20,9 @@ const Hero = () => {
       <AiFillLinkedin />
       <AiFillYoutube />
     </div>
-    <Image src={heroImg} />
+    <div className="mt-20 relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mx-auto overflow-hidden" >
+      <Image src={heroImg} fill style="cover" />
+    </div>
     </>
   )
 }
