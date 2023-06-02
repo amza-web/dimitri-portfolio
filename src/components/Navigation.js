@@ -4,8 +4,8 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 
 const Navigation = () => {
   return (
-    <header className='bg-white'>
-        <nav className=' mb-12 p-10 px-4 flex justify-between'>
+    <section className='bg-white'>
+        <nav className=' p-10 px-4 flex justify-between'>
           <h1 className='text-xl font-burtons'>developedbyamza</h1>
           <ul className='flex items-center gap-8'>
             <li>
@@ -18,7 +18,7 @@ const Navigation = () => {
 
           </ul>
         </nav>
-      </header>
+      </section>
   )
 }
 export default Navigation;
