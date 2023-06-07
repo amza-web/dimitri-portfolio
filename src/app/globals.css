@@ -5,16 +5,34 @@
 
 @layer base{
   section{
-    @apply mb-12;
+    @apply mb-12 mx-8;
   }
   p{
-    @apply leading-8 text-gray-800 py-2;
+    @apply leading-8 text-gray-800 py-2 dark:text-white;
   }
 }
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer components{
+  .ctn-mx{
+    @apply lg:max-w-7xl md:max-w-3xl mx-auto;
+  }
+  .card{
+    @apply shadow-xl p-5 py-10 rounded-xl hover:shadow-2xl 
+    hover:-translate-y-2 transition-all duration-300 flex 
+    flex-col gap-1 mb-6
+    lg:p-10 lg:py-14
+    ;
+  }
+}
+.ctn-nav{
+  max-width: 1440px;
+  @apply mx-auto;
+}
+.service-item::after{
+  content: "...";
+}
+.service-item li::after{
+  content: " |";
+  color: black;
 }
 
 body {
@@ -25,6 +43,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+*{
+  box-sizing: border-box;
 }
 
 
