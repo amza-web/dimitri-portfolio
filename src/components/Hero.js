@@ -6,15 +6,15 @@ import heroImg from '../../public/dev-ed-wave.png'
 
 const Hero = () => {
   return (
-    <section className='pb-5 ctn-mx'>
+    <section className='pb-5 ctn-mx dark:bg-gray-900'>
     <div className=' text-center'>
         <h2 className=" text-teal-600 text-5xl font-medium py-2">Dimitri Marco</h2>
-        <h3  className='text-2xl py-2'>Developer and Designer</h3>
+        <h3  className='text-2xl py-2 dark:text-white'>Developer and Designer</h3>
         <p className="px-10 py-5 mx-auto max-w-2xl">
             Freelancer providing services for programming and design content needs. Join me down below and lets start cracking!
         </p>
     </div>
-    <div className=' text-5xl flex justify-center gap-6 text-gray-600'>
+    <div className=' text-5xl flex justify-center gap-6 text-gray-600 dark:text-gray-400'>
       <AiFillTwitterCircle />
       <AiFillGithub />
       <AiFillLinkedin />

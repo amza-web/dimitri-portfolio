@@ -44,12 +44,12 @@ const Portfolio = () => {
   return (
     <section className='ctn-mx'>
         <div className='max-w-4xl text-center mx-auto'>
-            <h3 className='text-3xl py-1 font-medium'>Portfolio</h3>
+            <h3 className='text-3xl py-1 font-medium dark:text-white'>Portfolio</h3>
             <p>Throughout my career as a freelance designer and developer, I have had the privilege of working on a diverse range of projects. From collaborating with established agencies to partnering with startups, I have created impactful digital solutions for businesses and individuals.</p>
 
             <p>
                 My portfolio showcases a wide array of work, including brand design, web development, and interactive experiences. Each project represents my passion for crafting visually stunning and user-friendly digital products.<br/>
-                Curious to see my work? Explore my <spam className="text-teal-500">portfolio</spam> and get inspired.
+                Curious to see my work? Explore my <span className="text-teal-500">portfolio</span> and get inspired.
             </p>
         </div>
         <div>

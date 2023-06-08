@@ -28,13 +28,13 @@ const Services = () => {
   return (
     <section className='ctn-mx'>
         <div className='max-w-4xl text-center mx-auto mb-10'>
-            <h3 className='text-3xl py-1 font-medium'>Services I offer</h3>
+            <h3 className='text-3xl py-1 font-medium dark:text-white'>Services I offer</h3>
             <p className=''>Since the beginning of my journey as a freelance designer and developer, I have done remote work for <span className='text-teal-500'>agencies</span>, consulted for <span className='text-teal-500'>startups</span> and collaborated with talented people to create digital products for both business and consumer use. </p>
             <p>
                 I offer a wide variety of services, including brand design, programming and teaching. <br/>Interested in working together? <span className='text-teal-500'>Get in touch</span>
             </p>
         </div>
-        <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-center lg:flex-row '>
+        <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-center lg:flex-row lg:flex-nowrap dark:text-white'>
           {
             services.map((service, index) =>{
               return <Service key={index} service={service} />

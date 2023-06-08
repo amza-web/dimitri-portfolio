@@ -13,7 +13,7 @@
 }
 @layer components{
   .ctn-mx{
-    @apply lg:max-w-7xl md:max-w-3xl mx-auto;
+    @apply mx-auto lg:max-w-7xl md:max-w-3xl ;
   }
   .card{
     @apply shadow-xl p-5 py-10 rounded-xl hover:shadow-2xl 
@@ -21,6 +21,12 @@
     flex-col gap-1 mb-6
     lg:p-10 lg:py-14
     ;
+  }
+  .link{
+    @apply text-teal-600 dark:text-teal-500 underline underline-offset-4 transition-all hover:text-cyan-600 ;
+  }
+  .btn-primary{
+    @apply bg-cyan-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-cyan-700 transition-all duration-300 inline w-fit;
   }
 }
 .ctn-nav{
@@ -33,6 +39,7 @@
 .service-item li::after{
   content: " |";
   color: black;
+  @apply dark:text-white;
 }
 
 body {
