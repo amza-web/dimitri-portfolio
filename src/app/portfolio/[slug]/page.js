@@ -6,7 +6,6 @@ import web3 from '@/../public/web3.png'
 import web4 from '@/../public/web4.png'
 import web5 from '@/../public/web5.png'
 import Footer from '@/components/Footer'
-import Link from 'next/link'
 
 export async function generateMetadata({ params }) {
     const slug = decodeURIComponent(params.slug)
@@ -116,7 +115,7 @@ export default function PortfolioItemPage ({params}) {
             <Navigation />
             <main className='ctn-mx px-2'>
                 {content ? (
-                    <>
+                <>
                     <div>
                         <Image 
                         src={content.image}
@@ -129,9 +128,6 @@ export default function PortfolioItemPage ({params}) {
                         <h1 className='text-5xl'>{content.title}</h1>
                         <hr className='my-6 bg-gray-800 h-0.5' />
                         <div className="grid grid-cols-1">
-                            <div>
-
-                            </div>
                             <div className='text-xl text-slate-700'>
                                 <p>{content.description}</p>
                             </div>
@@ -150,9 +146,7 @@ export default function PortfolioItemPage ({params}) {
                             <p className='pt-5 text-xl'>
                                 {content.conclusion}
                             </p>
-                            <p className='text-xl'>
-                                {content.conclusion2}
-                            </p>
+                            {content.conclusion2}
                         </div>
                     </div>
                 </>
