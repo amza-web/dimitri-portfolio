@@ -20,10 +20,7 @@ export default function PortfolioItemPage ({params}) {
     const portfolioItems = [
         {
           title: 'Nike Air',
-          description: `I had the opportunity to work on an exciting project
-           where I created a captivating website showcasing the iconic Nike Air shoes.
-            The goal was to create an immersive and visually appealing experience that
-             highlights the unique features and design of Nike Air footwear.`,
+          description: "I had the opportunity to work on an exciting project where I created a captivating website showcasing the iconic Nike Air shoes. The goal was to create an immersive and visually experience that highlights the unique features and design of Nike Air footwear.",
           image: web1,
           features: [
             'Stunning Visuals',
@@ -101,9 +98,7 @@ export default function PortfolioItemPage ({params}) {
                 "Real-time Analytics",
                 "Collaboration and Feedback",
             ],
-            conclusion: `The Aimm project pushed the boundaries of UI design, providing a robust and flexible solution for creating world-class digital experiences. Through extensive research, iterative design, and collaboration with a talented team, we were able to create a design system that empowers designers and developers to deliver exceptional user experiences across various industries.
-
-            By adopting Aimm, businesses and individuals can unlock the potential to create immersive, intuitive, and visually stunning interfaces that captivate users and drive engagement. The new UI design system is set to revolutionize the way we approach digital design and pave the way for the next generation of user experiences.`,
+            conclusion: "The Aimm project pushed the boundaries of UI design, providing a robust and flexible solution for creating world-class digital experiences. Through extensive research, iterative design, and collaboration with a talented team, we were able to create a design system that empowers designers and developers to deliver exceptional user experiences across various industries.By adopting Aimm, businesses and individuals can unlock the potential to create immersive, intuitive, and visually stunning interfaces that captivate users and drive engagement. The new UI design system is set to revolutionize the way we approach digital design and pave the way for the next generation of user experiences.",
             conclusion2: <p>Experience the power of <a href="#" className="link">Aimm </a>and join the growing community of designers and developers who are shaping the future of digital experiences.</p>
         },
     
