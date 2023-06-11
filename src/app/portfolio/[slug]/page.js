@@ -82,7 +82,7 @@ export default function PortfolioItemPage ({params}) {
                 "Contact and Support",
             ],
             conclusion: "Gardy's website serves as a captivating virtual storefront, where users can immerse themselves in the world of beautiful flower arrangements and conveniently order bouquets for any occasion. With its stunning visuals, intuitive user interface, and customization options, the website offers an exceptional experience to flower enthusiasts and potential customers.",
-            conclusion2: <p>Explore <a href="#" className="link">Gardy's website</a> today to discover the artistry and elegance of their floral creations, and embrace the beauty of nature through their exquisite flower bouquets.</p>
+            conclusion2: <p>Explore <a href="#" className="link">Gardy&apos;'s website</a> today to discover the artistry and elegance of their floral creations, and embrace the beauty of nature through their exquisite flower bouquets.</p>
         },
         {
           title: "Aimm",
