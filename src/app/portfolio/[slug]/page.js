@@ -7,10 +7,13 @@ import web4 from '@/../public/web4.png'
 import web5 from '@/../public/web5.png'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
-export const metadata = {
-    title: `Portfolio | ${useRouter().query.slug}`,
+export async function generateMetadata({ params }) {
+    const slug = decodeURIComponent(params.slug)
+
+    return {
+        title: `Portfolio | ${slug}`,
+    }
 }
 
 export default function PortfolioItemPage ({params}) {
