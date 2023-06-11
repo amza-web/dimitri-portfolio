@@ -106,9 +106,9 @@ export default function PortfolioItemPage ({params}) {
     const content = portfolioItems.find(item => item.title === slug)
 
     return (
-        <div className=' dark:bg-gray-900'>
+        <div className=' dark:bg-gray-900 '>
             <Navigation />
-            <main className='ctn-mx px-2'>
+            <main className='ctn-mx px-2 lg:-mt-10'>
                 {content ? (
                 <>
                     <div>
@@ -123,12 +123,12 @@ export default function PortfolioItemPage ({params}) {
                         <h1 className='text-5xl'>{content.title}</h1>
                         <hr className='my-6 bg-gray-800 h-0.5' />
                         <div className="grid grid-cols-1">
-                            <div className='text-xl text-slate-700'>
+                            <div className='text-slate-700'>
                                 <p>{content.description}</p>
                             </div>
                             <div className='pt-5 dark:text-white'>
                                 <h2 className='text-3xl'>Key Features</h2>
-                                <ol className='text-xl text-teal-600 list-decimal pl-5 ml-2'>
+                                <ol className='text-teal-600 list-decimal pl-5 ml-2'>
                                     {content.features.map((feature, index) => {
                                         return (
                                             <li className='py-2' key={index}>{feature}</li>
@@ -138,7 +138,7 @@ export default function PortfolioItemPage ({params}) {
                                     }
                                 </ol>
                             </div>
-                            <p className='pt-5 text-xl'>
+                            <p className='pt-5 '>
                                 {content.conclusion}
                             </p>
                             {content.conclusion2}
