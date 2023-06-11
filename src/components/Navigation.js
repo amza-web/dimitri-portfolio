@@ -9,11 +9,10 @@ const Navigation = () => {
         <nav className=' py-10 px-7 flex justify-between'>
           <h1 className='text-xl font-burtons'>developedbyamza</h1>
           <ul className='flex items-center gap-8'>
-            <li>
-              <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={()=>{
+            <li  className='cursor-pointer text-xl p-2' onClick={()=>{
                 document.body.classList.toggle('dark')
-                console.log('clicked')
-              }} />
+              }} >
+              <BsFillMoonStarsFill />
             </li>
             <li><a
              className='bg-gradient-to-r from-cyan-500 to-teal-500 transition-all duration-1000 text-white px-4 py-2 rounded-md'
