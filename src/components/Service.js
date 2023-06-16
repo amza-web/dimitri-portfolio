@@ -11,7 +11,7 @@ const Service = ({service}) => {
         <p>{service.desc}</p>
         <div>
           <h4 className='text-xl'>Design tools I use</h4>
-          <ul className=' flex-wrap service-item text-teal-700 flex gap-2'>
+          <ul className=' flex-wrap service-item text-teal-700 dark:text-teal-500 flex gap-2'>
             {service.tools.map((tool, i) => {
               return <li key={i}>{tool}</li>
             })
