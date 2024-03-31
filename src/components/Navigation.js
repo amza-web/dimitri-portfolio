@@ -9,7 +9,7 @@ const Navigation = () => {
         <nav className=' py-10 px-7 flex justify-between'>
           <h1 className='text-xl font-burtons'>developedbyamza</h1>
           <ul className='flex items-center gap-8'>
-            <li id="lala" className='cursor-pointer text-xl p-2' onClick={()=>{
+            <li  className='cursor-pointer text-xl p-2' onClick={()=>{
                 document.body.classList.toggle('dark')
               }} >
               <BsFillMoonStarsFill />
